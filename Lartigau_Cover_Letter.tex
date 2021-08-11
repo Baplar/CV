@@ -1,0 +1,76 @@
+\documentclass[a4paper,
+    DINmtext,
+    version=last,
+    parskip=full,
+    foldmarks=false,
+    fromrule,
+    enlargefirstpage,
+    firstfoot=false,
+    fromphone, fromlogo, fromemail, fromurl,
+    addrfield=topaligned, backaddress=false]
+{scrlttr2}
+\usepackage[en-GB, showdow]{datetime2}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+
+\setkomavar{fromname}{Baptiste Lartigau}
+\setkomavar{signature}{Baptiste Lartigau}
+\setkomavar{fromaddress}{%
+    Björksätravägen 26 - Lägenhet 1106 \\
+    12737 Skärholmen \\ 
+    Sverige
+}
+\setkomavar{fromphone}[\faPhone{} \quad]{(+46) 072 341 42 75}
+\setkomavar{fromemail}[\faEnvelope{} \quad]{\href{mailto:baptiste.lartigau@gmail.com}{\texttt{baptiste.lartigau@gmail.com}}}
+\setkomavar{fromurl}[\faLinkedin{} \quad]{\url{https://www.linkedin.com/in/baplar/}}
+\setkomavar{fromlogo}{\includegraphics[height=3cm]{KTH_Logo.png}}
+
+\setkomavar{subject}{Degree project suggestion}
+
+%%%%%%%%%%%%%%%%%%%%
+% Adapt to contact %
+%%%%%%%%%%%%%%%%%%%%
+\newcommand{\company}{Riada}
+\newcommand{\contactFirstName}{Human}
+\newcommand{\contactLastName}{Resources}
+\newcommand{\contactSirOrMadam}{~}
+
+\begin{document}
+\begin{letter}{
+    \vspace{3cm} \contactFirstName{} \contactLastName{} \\ \company{}
+}
+\opening{To Whom It May Concern,}
+%\opening{Dear \contactSirOrMadam{} \contactLastName{},}
+I am currently pursuing the last year of my Master's program
+in software engineering at KTH in Stockholm,
+as part of a double degree agreement with the french engineering school Ensimag.
+During the past year spent at KTH, I mostly selected courses with an emphasis
+on software safety, security, and reliability, as well as several courses
+related to artificial intelligence and large-scale software development.
+
+I heard about \company{} during the D-Dagen organized at KTH last October,
+and to conclude my studies, I would like to perform a degree project in your company.
+My objective will be to work on a specific topic that you are interested in researching
+and would benefit \company{}, all the while writing a master thesis
+describing the results of the research. \\
+We will have the possibility to discuss the subject of the project
+in a further discussion if you are interested,
+so don't hesitate to propose me any matter that you would like to research
+but didn't have the opportunity to do so until now.
+
+My degree project must have a duration of at least 20 weeks;
+and while the starting date is not rigorously defined by KTH,
+I will be available to begin working as early as my studies are over,
+around the end of the month of June. \\
+And although I will have to present the results of my work in a seminar
+at the end of the project, I will then be fully available to continue working
+if the opportunity arises.
+
+I look forward to hearing from you soon.
+Please don't hesitate to contact me if you need more information
+about me or the degree project.
+
+\closing{Yours sincerely,}
+\end{letter}
+\end{document}

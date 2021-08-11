@@ -1,0 +1,66 @@
+\usepackage[a4paper, top=15mm, bottom=15mm, left=20mm, right=20mm]{geometry}
+\usepackage{tabto}
+
+\usepackage{xcolor}
+\definecolor{navy}{RGB}{0,0,102}
+
+\setlength{\parindent}{0cm}
+\newlength{\sectionpos}
+\setlength{\sectionpos}{1cm}
+\newlength{\entrypos}
+\setlength{\entrypos}{3.5cm}
+\newlength{\detailpos}
+\setlength{\detailpos}{3.5cm}
+
+\renewcommand{\maketitle}{%
+\begin{center}
+\textbf{\Large \color{navy} \@author}
+
+\medskip
+\textbf{\large \@title}
+\end{center} 
+
+\bigskip
+}
+
+\renewcommand{\section}[2]{{%
+\color{navy}
+\hrulefill
+
+\medskip
+\large #1 \tabto{\sectionpos} \textbf{\uppercase{#2}}
+
+\medskip
+}}
+
+\newcommand{\contact}[2]{%
+{\color{navy} #1} \tabto{\sectionpos} #2
+
+\smallskip
+}
+
+\newenvironment{datedEntry}[2]{%
+\textit{\small #1} \tabto{\entrypos} #2
+
+\smallskip
+\begingroup
+\small
+\leftskip\detailpos
+}{%
+
+\endgroup
+
+\medskip
+}
+
+\newcommand{\entryItem}[1]{%
+-- \tabto{0.5cm} #1
+
+\smallskip
+}
+
+\newcommand{\titledEntry}[2]{%
+\tabto{\sectionpos} \textbf{#1}: #2
+
+\medskip
+}
