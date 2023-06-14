@@ -4,13 +4,16 @@
 \usepackage{hyperref}
 \usepackage{fontawesome5}
 \usepackage{fontspec}
-\setmainfont[Ligatures=TeX]{Noto-Serif}
-\setsansfont[Ligatures=TeX]{Noto-Sans}
-\setmonofont[Ligatures=TeX]{Noto-Sans-Mono}
+\setmainfont[Ligatures=TeX]{Noto Serif}
+\setsansfont[Ligatures=TeX]{Noto Sans}
+\setmonofont[Ligatures=TeX]{Noto Sans Mono}
 \renewcommand{\familydefault}{\sfdefault}
 
+\usepackage{polyglossia}
+\setmainlanguage{english}
+
 \author{Baptiste LARTIGAU}
-\title{Software Engineer}
+\title{Software and DevOps Engineer}
 
 \begin{document}
 \thispagestyle{empty}
@@ -24,14 +27,22 @@
 \section{\faBlackTie}{Experience}
 
 \begin{datedEntry}
-    {Sep. 2019 -- Today}
-    {\textbf{Software engineer} at \textbf{SII} -- Toulouse, France}
-    Contractor work at \textbf{THALES ALENIA SPACE} for the SpaceOps project
+    {Jan. 2023 -- Today}
+    {\textbf{Software engineer} at \textbf{Shippingbo} -- Toulouse, France}
+    \entryItem{Development of an all-in-one logistics management system in \textbf{Ruby on Rails}}
+    \entryItem{Creation and maintenance of API connectors (REST, SOAP) for transport services}
+    \entryItem{\textbf{DevOps} activities, improvement of build and development environments}
+\end{datedEntry}
+
+\begin{datedEntry}
+    {Sep. 2019 -- Dec. 2022}
+    {\textbf{Software engineer} and \textbf{Tech lead} at \textbf{SII} -- Toulouse, France}
+    Contractor mission at \textbf{THALES ALENIA SPACE} for the SpaceOps project
 
     \smallskip
+    % \entryItem{\textbf{Tech lead} for one of the project’s development squads}
     \entryItem{Development on large \textbf{Java} codebases to add new features}
-    \entryItem{\textbf{Tech lead} role in one of the project’s development squads}
-    \entryItem{DevOps work to improve and optimize the building and deployment pipelines}
+    \entryItem{\textbf{DevOps} activities, improvement and optimization of build and deployment pipelines}
 \end{datedEntry}
 
 \begin{datedEntry}
@@ -42,6 +53,7 @@
     \entryItem{Design of a complete log anomaly detection framework for A350 IMO logs}
 \end{datedEntry}
 
+\iffalse
 \begin{datedEntry}
     {July -- Oct. 2018}
     {\textbf{AWS cloud security engineer} at \textbf{AIRBUS} -- Toulouse, France}
@@ -49,15 +61,16 @@
     % \entryItem{Evaluating compliance monitoring solutions (AWS Config, Cloud Custodian, Evident.io)}
     \entryItem{Defining company-wide security rules and standards for AWS services}
 \end{datedEntry}
+\fi
 
 \begin{datedEntry}
     {Apr. -- July 2017}
     {\textbf{Software engineer} at \textbf{AIRBUS DEFENCE AND SPACE} -- Toulouse, France}
-    Creation of a visualization tool for DynaWorks database models
+    % Creation of a visualization tool for DynaWorks database models
 
-    \smallskip
+    %\smallskip
     % \entryItem{Problem analysis and high-level conception of a solution}
-    \entryItem{Complete implementation in \textbf{C++ / Qt} based on existing DynaWorks APIs}
+    \entryItem{\textbf{C++ / Qt} implementation of a database model visualization tool}
     \entryItem{Performance optimization and reliability validation}
     % \entryItem{User documentation and UI design}
 \end{datedEntry}
@@ -79,9 +92,9 @@
     \textbf{Master's degree in software engineering}
 
     \smallskip
-    \entryItem{Large-scale software development}
+    \entryItem{Large-scale software design and development}
     \entryItem{Software safety, security and reliability}
-    \entryItem{Artificial Intelligence and Machine Learning}
+    % \entryItem{Artificial Intelligence and Machine Learning}
 \end{datedEntry}
 
 \begin{datedEntry}
@@ -91,16 +104,19 @@
 
     \smallskip
     \textbf{Master's degree in IT systems engineering}
+
+    \smallskip
+    \entryItem{Software design and development}
 \end{datedEntry}
 
 
 \section{\faLaptop}{Computer skills}
 
 \titledEntry{Languages}
-{Rust, Java, C++ and Qt, Haskell, Clojure, SQL (Postgre, Oracle), C, Python, ...}
+{Rust, Ruby/Rails, Java/Spring, C++/Qt, Haskell, Clojure, SQL (Postgre), C, Python, ...}
 
 \titledEntry{Development tools \& DevOps}
-{Git, vim, Maven, Jenkins, Ansible, Artifactory, ...}
+{Git, vim, Maven, Jenkins, Ansible, Artifactory, CircleCI, ...}
 
 \titledEntry{OS}
 {Linux (Red Hat / CentOS, Debian, Arch), MS Windows}
@@ -111,7 +127,7 @@
 \titledEntry{French}{Mother tongue}
 
 \titledEntry{English}
-{\textbf{TOEIC C1} -- Professional, high level of written proficiency}
+{\textbf{TOEIC C1} -- Professional, high level of written and spoken proficiency}
 
 \titledEntry{Swedish \& Spanish}
 {\textbf{B1 - B2} -- Intermediate level}
